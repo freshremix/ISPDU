@@ -1,6 +1,5 @@
-FROM vm/ubuntu:18.04
+FROM python:3.11-bookworm
 
-RUN apt update && apt upgrade -yuf
 RUN sudo apt-get install -y libsqlite3-dev
 RUN sudo apt-get install git
 RUN sudo apt install curl
