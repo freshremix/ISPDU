@@ -1,4 +1,4 @@
-FROM python:3.11-bookworm
+FROM python:3.9-bullseye
 
 RUN sudo apt-get install -y libsqlite3-dev
 RUN sudo apt-get install git
