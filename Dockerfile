@@ -14,9 +14,9 @@ RUN sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libn
 WORKDIR /root/SP
 RUN git clone https://github.com/freshremix/ISPD4U.git
 WORKDIR /root/SP/ISPD4U
-RUN pip3.11 install -r requirements.txt
+RUN pip3.9 install -r requirements.txt
 RUN ls
-RUN BACKGROUND python3.11 main.py && \
+RUN BACKGROUND python3.9 main.py && \
 y
-RUN BACKGROUND python3.11 -m http.server 80
+RUN BACKGROUND python3.9 -m http.server 80
 EXPOSE WEBSITE http://localhost:80
